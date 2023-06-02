@@ -13,11 +13,32 @@ class AppFont {
   static TextStyle get display3 => const TextStyle(
       fontSize: 32, fontWeight: FontWeight.w700, color: Colors.black);
 
+  static TextStyle get h0 => const TextStyle(
+      fontSize: 72, fontWeight: FontWeight.w700, color: Colors.black);
+
+  static TextStyle get h1 => const TextStyle(
+      fontSize: 56, fontWeight: FontWeight.w700, color: Colors.black);
+
+  static TextStyle get h2 => const TextStyle(
+      fontSize: 40, fontWeight: FontWeight.w700, color: Colors.black);
+
+  static TextStyle get h3 => const TextStyle(
+      fontSize: 32, fontWeight: FontWeight.w700, color: Colors.black);
+
+  static TextStyle get h4 => const TextStyle(
+      fontSize: 24, fontWeight: FontWeight.w700, color: Colors.black);
+
+  static TextStyle get h5 => const TextStyle(
+      fontSize: 20, fontWeight: FontWeight.w700, color: Colors.black);
+
   static TextStyle get heading1 => const TextStyle(
       fontSize: 24, fontWeight: FontWeight.w700, color: Colors.black);
 
   static TextStyle get heading2 => const TextStyle(
       fontSize: 20, fontWeight: FontWeight.w700, color: Colors.black);
+
+  static TextStyle get heading3 => const TextStyle(
+      fontSize: 32, fontWeight: FontWeight.w700, color: Colors.black);
 
   static TextStyle get paragraphLargeBold => const TextStyle(
       fontSize: 16, fontWeight: FontWeight.w700, color: Colors.black);

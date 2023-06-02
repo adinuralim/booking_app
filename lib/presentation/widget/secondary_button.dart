@@ -1,14 +1,16 @@
-import 'package:booking_app/config/config.dart';
+import 'package:booking_app/config/theme/app_color.dart';
 import 'package:flutter/material.dart';
 
-class PrimaryButton extends StatelessWidget {
-  PrimaryButton(
+import '../../config/theme/app_font.dart';
+
+class SecondaryButton extends StatelessWidget {
+  SecondaryButton(
       {Key? key,
-      this.type = PrimaryButtonType.type2,
+      this.type = SecondaryButtonType.type2,
       this.onPressed,
       required this.text})
       : super(key: key);
-  final PrimaryButtonType type;
+  final SecondaryButtonType type;
   final VoidCallback? onPressed;
   final String text;
 
@@ -18,21 +20,21 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     switch (type) {
-      case PrimaryButtonType.type1:
+      case SecondaryButtonType.type1:
         height = 24;
         width = 112;
         appFont = AppFont.componentSmall;
         vertical = 0;
         horizontal = 0;
         break;
-      case PrimaryButtonType.type2:
+      case SecondaryButtonType.type2:
         height = 32;
         width = 120;
         appFont = AppFont.componentMediumBold;
         vertical = 8;
         horizontal = 12;
         break;
-      case PrimaryButtonType.type3:
+      case SecondaryButtonType.type3:
         height = 40;
         width = 128;
         appFont = AppFont.componentLarge;
@@ -49,18 +51,19 @@ class PrimaryButton extends StatelessWidget {
 
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: AppColor.ink01,
+            side: BorderSide(width: 1, color: AppColor.ink01),
+            backgroundColor: AppColor.ink06,
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(4))),
         onPressed: onPressed,
         child: Text(
           text,
-          style: appFont!.copyWith(color: AppColor.ink06),
+          style: appFont!.copyWith(color: AppColor.ink01),
         ));
   }
 }
 
-enum PrimaryButtonType {
+enum SecondaryButtonType {
   type1,
   type2,
   type3,
