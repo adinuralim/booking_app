@@ -1,4 +1,5 @@
 import 'package:booking_app/presentation/pages/onboarding/onboarding_view.dart';
+import 'package:booking_app/presentation/pages/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               title: 'Flutter Demo',
               theme: ThemeData(useMaterial3: true, fontFamily: "Poppins"),
-              home: OnboardingPage());
+              home: const LoginPage());
         });
   }
 }
